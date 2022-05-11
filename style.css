@@ -6,14 +6,16 @@ body {
     flex-direction: column;
 }
 
-.drop {
+.country {
     position: relative;
-    top: 15vw;
+    top: 22vw;
     border-radius: 5px;
-    padding: 5px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
 }
 
-.heading {
+h1 {
     position: relative;
     top: 15vw;
     border-radius: 5px;

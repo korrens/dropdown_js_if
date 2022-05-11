@@ -1,21 +1,28 @@
-const select = document.getElementById("select"),
-    arr = ["Latvian", "English", "Russian"];
+const countries = ['English', 'Latvian', 'Russian'],
+    select = document.getElementById('countries');
 
-for (var i = 0; i < arr.length; i++) {
-    var option = document.createElement("OPTION"),
-        txt = document.createTextNode(arr[i]);
-    option.appendChild(txt);
-    option.setAttribute("value", arr[i]);
-    select.insertBefore(option, select.lastChild);
-}
+for (country in countries) {
 
+    select.add(new Option(countries[country]));
 
-if (arr[0] = "Latvian") {
-    document.getElementById("heading").innerHTML = "Labdien!";
-}
-else if (arr[1] == "English") {
-    document.getElementById("heading").innerHTML = "Hello!";
-}
-else if (arr[2] == "Russian") {
-    document.getElementById("heading").innerHTML = "Добрый день!";
+};
+
+function display() {
+    const e = document.getElementById("countries");
+    const index = e.selectedIndex;
+    if (index == 0) {
+        document.getElementById("eng").style.display = 'block'
+        document.getElementById("lv").style.display = 'none'
+        document.getElementById("ru").style.display = 'none'
+    }
+    else if (index == 1) {
+        document.getElementById("eng").style.display = 'none'
+        document.getElementById("lv").style.display = 'block'
+        document.getElementById("ru").style.display = 'none'
+    }
+    else if (index == 2) {
+        document.getElementById("eng").style.display = 'none'
+        document.getElementById("lv").style.display = 'none'
+        document.getElementById("ru").style.display = 'block'
+    }
 }
