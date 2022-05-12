@@ -5,19 +5,3 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-
-.country {
-    position: relative;
-    top: 22vw;
-    border-radius: 5px;
-    width: 100px;
-    height: 25px;
-    text-align: center;
-}
-
-h1 {
-    position: relative;
-    top: 15vw;
-    border-radius: 5px;
-    padding: 5px;
-}
